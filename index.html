@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/fav.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://use.fontawesome.com/305af162a7.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>PortFolio</title>
+  </head>
+  <body>
+    
+    <div class="container" id="home">
+      <nav id="nav">
+        <div class="nav__container">
+          <a href="#home">
+            <img src="./images/logo.png" class="logo" alt="logo"
+          /></a>
+          <ul class="nav__menu">
+            <li class="nav__items"><a href="#home">Home</a></li>
+            <li class="nav__items"><a href="#about">About</a></li>
+            <li class="nav__items"><a href="#services">Services</a></li>
+            <li class="nav__items"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav__items"><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="open-menu-btn">
+            <i class="fa fa-bars"></i>
+          </button>
+          <button id="close-menu-btn">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- Hero Section -->
+
+    <div class="container">
+      <main class="hero-section section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h3 class="hero-text--sub">Hie there...</h3>
+            <h1 class="hero-text--main">I'm Patrick Juawo</h1>
+            <h2 class="hero-text--title">Front End Developer</h2>
+            <div class="buttons">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+              <a href="./Patrick Juawo.pdf" download class="btn btn-secondary"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./images/blob.svg" class="hero" alt="" />
+            <img src="./images/hero-pic1.png" class="hero-pic" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Section About -->
+
+    <div class="container">
+      <section class="section" id="about">
+        <div class="title">
+          <h2 class="headings">About Me</h2>
+          <p>
+            Bringing Technical Skills and Creativity to Front-End Development:
+            Patrick Juawo
+          </p>
+        </div>
+        <div class="about-center section-center">
+          <article class="about-img hero-image">
+            <img src="./images/blob2.svg" alt="" class="blob" />
+            <img src="./images/hero-pic1.png" class="hero-pic" alt="Photo of Patrick Juawo" />
+          </article>
+
+          <article class="about">
+            <div class="btn-container">
+              <button class="tab-btn active" data-id="about-me">
+                About Me
+              </button>
+              <button class="tab-btn" data-id="skills">Skills</button>
+            </div>
+            <article class="about-content">
+              <!-- single item -->
+              <div class="content active" id="about-me">
+                <h3>About Me</h3>
+
+                <p>
+                  Hi, I'm Patrick Juawo, a multi-talented professional with [5]
+                  years of experience in the Information Technology field. With
+                  a diploma in Information Technology and a newfound passion for
+                  front-end web development, I bring a unique blend of technical
+                  skills and creative flair to every project I work on.
+                </p>
+
+                <p>
+                  I have a deep understanding of HTML5, CSS3, JavaScript, and
+                  React, and have a proven track record of delivering visually
+                  appealing and user-friendly interfaces. I am committed to
+                  following best practices in responsive design and
+                  accessibility, and I always strive to create a positive user
+                  experience.
+                </p>
+
+                <p>
+                  Thank you for taking the time to visit my portfolio. If you
+                  have any questions or opportunities, please feel free to
+                  contact me.
+                </p>
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              </div>
+
+              <!-- end single item -->
+              <!-- single item -->
+              <div class="content" id="skills">
+                <div class="skills-list">
+                  <h3>Skills</h3>
+                  <div class="skills-icon">
+                    <div class="skill">
+                      <img src="./images/icons8-html-5.svg" alt="HTML 5 icon" />
+                      <h4>HTML 5</h4>
+                    </div>
+                    <div class="skill">
+                      <img src="./images/icons8-css3.svg" alt="CSS3 icon" />
+                      <h4>CSS3</h4>
+                    </div>
+                    <div class="skill">
+                      <img src="./images/icons8-javascript.svg" alt="JavaScript icon" />
+                      <h4>Javascript</h4>
+                    </div>
+                    <div class="skill">
+                      <img src="./images/icons8-react-native.svg" alt="React icon" />
+                      <h4>React</h4>
+                    </div>
+                    <div class="skill">
+                      <img
+                        src="./images/icons8-bootstrap-a-free-and-open-source-css-framework-96.png"
+                        alt="Bootstrap Icon"
+                      />
+                      <h4>Bootstrap 5</h4>
+                    </div>
+                    <div class="skill">
+                      <img src="./images/icons8-figma.svg" alt="Figma icon" />
+                      <h4>Figma</h4>
+                    </div>
+                    <div class="skill">
+                      <img src="./images/icons8-github.svg" alt="Github icon" />
+                      <h4>Github</h4>
+                    </div>
+                  
+                </div>
+              </div>
+            </article>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Section Services  -->
+
+    <div class="container" id="services">
+      <section class="section">
+        <div class="title">
+          <h2 class="headings">Services</h2>
+          <p>
+            Transforming Ideas into Interactive Web Solutions and IT Solutions
+          </p>
+        </div>
+        <div class="cards-container">
+          <div class="card card1">
+            <img src="./images/icons8-code.png" alt="" />
+            <h1 class="card-title">Front-End Web Development</h1>
+            <p>
+              Development of beautiful and user-friendly websites that deliver a
+              seamless user experience.
+            </p>
+          </div>
+          <div class="card card1">
+            <img
+              src="./images/icons8-computer-support.png"
+              alt="web development"
+            />
+            <h1 class="card-title">IT Support</h1>
+            <p>
+              Providing technical support and troubleshooting for hardware,
+              software, and networking issues.
+            </p>
+          </div>
+          <div class="card card1">
+            <img
+              src="./images/icons8-computer-support.png"
+              alt="web development"
+            />
+            <h1 class="card-title">Data Management</h1>
+            <p>
+              Provide expertise in organizing, managing, and storing data,
+              ensuring that it is accurate, secure, and accessible. The services
+              include data capture, data storage, and data migration.
+            </p>
+          </div>
+          <div class="card card1">
+            <img src="./images/icons8-responsive-design.png" alt="" />
+            <h1 class="card-title">Responsive Design</h1>
+            <p>
+              Focus on building websites that are optimized for different screen
+              sizes and resolutions, ensuring that the website looks great and
+              functions properly on any device.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PortFolio -->
+
+    <div class="container">
+      <section class="section" id="portfolio">
+        <div class="title">
+          <h2 class="headings">Portfolio Projects</h2>
+          <p>A Showcase of My Accomplishments.</p>
+        </div>
+        <div class="portfolio__projects">
+          <article class="portfolio__project">
+            <span class="portfolio__project-image">
+              <img src="./images/project1.png" alt="Portfolio Project" />
+            </span>
+            <div class="buttons">
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-primary"
+                >Github
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-secondary"
+                >Live Demo
+                <i class="fa-regular fa-eye"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio__project">
+            <span class="portfolio__project-image">
+              <img src="./images/project2.png" alt="Portfolio Project" />
+            </span>
+            <div class="buttons">
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-primary"
+                >Github
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-secondary"
+                >Live Demo
+                <i class="fa-regular fa-eye"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio__project">
+            <span class="portfolio__project-image">
+              <img src="./images/project3.png" alt="" />
+            </span>
+            <div class="buttons">
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-primary"
+                >Github
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-secondary"
+                >Live Demo
+                <i class="fa-regular fa-eye"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio__project">
+            <span class="portfolio__project-image">
+              <img src="./images/project4.jpg" alt="" />
+            </span>
+            <div class="buttons">
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-primary"
+                >Github
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-secondary"
+                >Live Demo
+                <i class="fa-regular fa-eye"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio__project">
+            <span class="portfolio__project-image">
+              <img src="./images/project5.jpg" alt="" />
+            </span>
+            <div class="buttons">
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-primary"
+                >Github
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a
+                href="https://github.com/pjuawo"
+                target="_blank"
+                class="btn btn-secondary"
+                >Live Demo
+                <i class="fa-regular fa-eye"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="container">
+      <section class="contact section" id="contact">
+        <div class="title">
+          <h2 class="headings">Contact</h2>
+          <p>Get in touch with me for further discussions.</p>
+        </div>
+        <div class="form-container">
+          <form
+            class="message-info"
+            action="https://formsubmit.co/pjuawo@gmail.com"
+            method="POST"
+          >
+            <h1 class="form-title">Message Me</h1>
+            <div class="form-control">
+              <label for="fname">Name</label>
+              <input type="text" name="name" placeholder="Joe Doe" required />
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="joedoe@abcde.com"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter Subject"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter message..."
+                required
+              ></textarea>
+            </div>
+            <div class="button-container">
+              <button class="btn btn-send">Send Message</button>
+            </div>
+
+            <div class="contact-socials">
+
+              <div class="contact-icon github">
+                <div class="tooltip">Github</div>
+                <span>
+                  <a
+                    href="https://github.com/pjuawo"
+                    class="github"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact-icon phone">
+                <div class="tooltip">+27813603447</div>
+                <span>
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+
+              <div class="contact-icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span>
+                  <a href="https://www.facebook.com/pjuawo/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact-icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span>
+                  <a href="https://twitter.com/pjuawo" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact-icon whatsapp">
+                <div class="tooltip">Whatsapp</div>
+                <span>
+                  <a
+                    href="https://wa.me/+27813603447"
+                    target="_blank"
+                    class="whatsapp"
+                    ><i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </span>
+              </div>
+
+              <div class="contact-icon linkedin">
+                <div class="tooltip">Linkedin</div>
+                <span>
+                  <a
+                    href="linkedin.com/in/patrick-juawo-9262b717b"
+                    class="linkedin"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!--- Footer -->
+    <div class="container">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="copyright">
+            <p>
+              Copyright- <span id ="copyright-year"></span> rights reserved | Developed by Patrick Juawo
+            </p>
+          </div>
+          <div class="links">
+            <a href="https://www.facebook.com/pjuawo/" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a
+              href="https://twitter.com/pjuawo"
+              class="twitter"
+              target="_blank"
+            >
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a
+              class="whatsapp"
+              href="https://wa.me/+27813603447"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              href="linkedin.com/in/patrick-juawo-9262b717b"
+              class="linkedin"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/pjuawo" class="github" target="_blank"
+              ><i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Social Icons -->
+
+    <div class="social-icons">
+       <a href="https://www.facebook.com/pjuawo/" target="_blank"><i class="fa fa-facebook"></i></a>
+
+      <a href="https://twitter.com/pjuawo" class="twitter" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+
+      <a class="whatsapp" href="https://wa.me/+27813603447" target="_blank"
+        ><i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <a
+        href="linkedin.com/in/patrick-juawo-9262b717b"
+        class="linkedin"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/pjuawo" class="github" target="_blank"
+        ><i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
