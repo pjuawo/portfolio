@@ -74,6 +74,7 @@ body {
   max-width: 1200px;
   width: 100%;
 
+  margin: auto;
   padding: 1rem auto;
 }
 
@@ -242,7 +243,7 @@ nav.active .nav__items::after {
 .hero-container {
   display: flex;
   max-width: 100%;
-  margin-top: 3.25rem;
+  margin-top: 4.25rem;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
