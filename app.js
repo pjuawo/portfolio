@@ -1,55 +1,46 @@
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.querySelectorAll(".nav__items a");
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav__items");
 
-const navItems = document.querySelectorAll(".nav__items");
-const body = document.querySelector("body");
+const navSlide = () => {
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s linear forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
+    });
+    hamburger.classList.toggle("toggle");
+  });
 
-// hamburger.addEventListener("click", () => {
-//   navLinks.classList.toggle("open");
-//   hamburger.classList.toggle("toggle");
-// });
-
-// hide close button on larger screens
-
-// const hideCloseBtn = () => {
-//   if (window.innerWidth > 950) {
-//     closeBtn.style.display = "none";
-//     menuBtn.style.display = "none";
-//     menu.style.display = "flex";
-//   } else {
-//     menuBtn.style.display = "inline-block";
-//   }
-// };
-
-// window.addEventListener("resize", hideCloseBtn);
-
-// show/hide nav menu
-
-const menu = document.querySelector(".nav__menu");
-const menuBtn = document.querySelector("#open-menu-btn");
-const closeBtn = document.querySelector("#close-menu-btn");
-
-menuBtn.addEventListener("click", () => {
-  menu.style.display = "flex";
-  closeBtn.style.display = "inline-block";
-  menuBtn.style.display = "none";
-});
-
-// close nav menu
-
-const closeNav = () => {
-  menu.style.display = "none";
-  closeBtn.style.display = "none";
-  menuBtn.style.display = "inline-block";
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("nav-active");
+      navLinks.forEach((link) => {
+        link.style.animation = "";
+      });
+      hamburger.classList.remove("toggle");
+    });
+  });
 };
 
-closeBtn.addEventListener("click", closeNav);
+navSlide();
 
-// Close Nav when link is clicked
+// Change background color of header as you scroll
+const navBar = document.getElementById("nav");
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", closeNav);
-});
+window.onscroll = () => {
+  const top = window.scrollY;
+  if (top > 50) {
+    navBar.classList.add("active");
+  } else {
+    navBar.classList.remove("active");
+  }
+};
 
 const btns = document.querySelectorAll(".tab-btn");
 const articles = document.querySelectorAll(".content");
@@ -72,18 +63,6 @@ about.addEventListener("click", (e) => {
     element.classList.add("active");
   }
 });
-
-// Change background color of header as you scroll
-const nav = document.getElementById("nav");
-
-window.onscroll = () => {
-  const top = window.scrollY;
-  if (top > 50) {
-    nav.classList.add("active");
-  } else {
-    nav.classList.remove("active");
-  }
-};
 
 // Change copyright date dynamically
 
